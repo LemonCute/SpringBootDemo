@@ -17,9 +17,9 @@ import java.util.Random;
 @Api(description = "用户操作接口")
 @Controller("user")
 @RequestMapping("/user")
-public class UserController{// extends BaseController {
+public class UserController {// extends BaseController {
 
-//    @ApiOperation(value = "获取otp", notes="通过手机号获取OTP验证码")
+    //    @ApiOperation(value = "获取otp", notes="通过手机号获取OTP验证码")
 //    @ApiImplicitParam(name = "telephone", value = "电话号码", paramType = "query", required = true, dataType = "Integer")
 //    @RequestMapping(value = "getotp", method= RequestMethod.GET)
 //    @ResponseBody
@@ -39,7 +39,6 @@ public class UserController{// extends BaseController {
 //        otpVo.setOtpCode(otpCode);
 //        return CommonReturnType.create(otpVo);
 //    }
-
 }
 
 
