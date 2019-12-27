@@ -21,7 +21,7 @@ import javax.sql.DataSource;
  */
 @Component
 @Configuration
-@ConfigurationProperties(prefix = "spring.datasource.druid.druid")
+@ConfigurationProperties(prefix = "spring.datasource.druid")
 @EnableConfigurationProperties
 public class DruidConfiguration{
     // 初始化大小，最小，最大

@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.cache.annotation.EnableCaching;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -32,9 +33,16 @@ import java.util.Properties;
  * //必须加这个，不加报错，如果不加，也可以在每个mapper上添加@Mapper注释
  *
  * @MapperScan({"com.lcke.demo.dao"})
+ * //开启spring缓存
+ * @EnableCaching
+ * @EnableCaching：在主入口类上添加该注解，用于开启缓存；
+ * @CacheConfig：标注在类上，表示当前类使用的缓存组件中的key为该注解指定的cacheNames/value，当该注解指定了cacheNames/value之后，@Cacheable上就无需再使用cacheNames/value了；
+ * @Cacheable：将方法的结果进行缓存；
+ * cacheNames/value：缓存组件的名字；
  */
 @SpringBootApplication
 @ServletComponentScan
+@EnableCaching
 //必须加这个，不加报错，如果不加，也可以在每个mapper上添加@Mapper注释
 @MapperScan({"com.lcke.demo.dao"})
 public class DemoApplication {

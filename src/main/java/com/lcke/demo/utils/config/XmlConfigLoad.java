@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
  * @Configuration 这个注解会在项目启动时加载下面这个类
  */
 @Configuration
-@ImportResource({"classpath*:applicationContext.xml"})
+@ImportResource({"classpath*:config/applicationContext.xml","classpath:config/spring-task.xml"})
 public class XmlConfigLoad {
 
     public XmlConfigLoad() {
