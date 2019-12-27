@@ -76,12 +76,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--集成redis-->
+        <!--集成redis ，springboot 2+不再使用Jedis作为默认连接驱动-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-        <!--spring2.0集成redis所需common-pool2-->
+        <!--spring2.0集成redis所需common-pool2 ，2+默认使用lettuce采用netty连接redis server-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>

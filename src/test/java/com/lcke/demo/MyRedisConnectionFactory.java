@@ -1,17 +1,10 @@
 package com.lcke.demo;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.connection.RedisPassword;
-import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
-import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
-import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
-
-import java.time.Duration;
 
 /**
- * ClassName: sdsadas <br/>
+ * ClassName: Jedis连接方式 <br/>
  * Description: <br/>
  * date: 2019/12/27 0:10<br/>
  *

@@ -1,35 +1,35 @@
 package com.lcke.demo.utils.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.connection.RedisPassword;
-import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
-import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
-import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.time.Duration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * redis配置类
  *
- * @author ZENG.XIAO.YAN
- * @date 2018年6月6日
+ * @author shenmingkai
+ * @date 2019年12月27日
  */
 @Configuration
 public class RedisConfig {
 
+    /**
+     * 增强  RedisTemplate
+     * 如果要在代码中使用RedisTemplate，那么配完上面的就已经可以用了，
+     * 不过RedisTemplate默认只能支持RedisTemplate<String,String>形式的，
+     * 也就是key-value只能是字符串，不能是其他对象。
+     * @param factory
+     * @return
+     */
 
-    @Bean
-    @SuppressWarnings("all")
+    @Bean({"redisTemplate","stringRedisTemplate"})
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<String, Object> template = new RedisTemplate<String, Object>();
         template.setConnectionFactory(factory);
@@ -47,7 +47,27 @@ public class RedisConfig {
         template.setValueSerializer(jackson2JsonRedisSerializer);
         // hash的value序列化方式采用jackson
         template.setHashValueSerializer(jackson2JsonRedisSerializer);
+
         template.afterPropertiesSet();
         return template;
     }
+
+//    @Bean(name = "redisTemplate")
+//    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
+//        RedisTemplate<String, Object> template = new RedisTemplate<String, Object>();
+//        template.setConnectionFactory(factory);
+//
+//        //JdkSerializationRedisSerializer jdkSerializationRedisSerializer = new JdkSerializationRedisSerializer();
+//        GenericJackson2JsonRedisSerializer jackson2JsonRedisSerializer = new GenericJackson2JsonRedisSerializer();
+//        // 设置值（value）的序列化采用FastJsonRedisSerializer。
+//        template.setValueSerializer(jackson2JsonRedisSerializer);
+//        // redisTemplate.setHashValueSerializer(fastJsonRedisSerializer);
+//        // 设置键（key）的序列化采用StringRedisSerializer。
+//        template.setKeySerializer(new StringRedisSerializer());
+//        template.setHashKeySerializer(new StringRedisSerializer());
+//        template.afterPropertiesSet();
+//
+//        template.afterPropertiesSet();
+//        return template;
+//    }
 }
