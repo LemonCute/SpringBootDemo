@@ -12,23 +12,23 @@ import org.springframework.util.CollectionUtils;
 
 /**
  * Redis工具类
- * @author ZENG.XIAO.YAN
- * @date 2018年6月7日
+ * @author shenmingkai
+ * @date 2019年12月27日
  */
 @Component
 public final class RedisUtil {
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
-    // =============================common============================
 
+    // =============================common============================
     /**
      * 指定缓存失效时间
      * @param key 键
      * @param time 时间(秒)
      * @return
      */
-    public boolean expire(String key, long time) {
+    public boolean setExpire(String key, long time) {
         try {
             if (time > 0) {
                 redisTemplate.expire(key, time, TimeUnit.SECONDS);
@@ -77,8 +77,9 @@ public final class RedisUtil {
             }
         }
     }
-    // ============================String=============================
 
+
+    // ============================String=============================
     /**
      * 普通缓存获取
      * @param key 键
@@ -150,8 +151,9 @@ public final class RedisUtil {
         }
         return redisTemplate.opsForValue().increment(key, -delta);
     }
-    // ================================Map=================================
 
+
+    // ================================Map=================================
     /**
      * HashGet
      * @param key 键 不能为null
@@ -198,7 +200,7 @@ public final class RedisUtil {
         try {
             redisTemplate.opsForHash().putAll(key, map);
             if (time > 0) {
-                expire(key, time);
+                this.setExpire(key, time);
             }
             return true;
         } catch (Exception e) {
@@ -236,7 +238,7 @@ public final class RedisUtil {
         try {
             redisTemplate.opsForHash().put(key, item, value);
             if (time > 0) {
-                expire(key, time);
+                this.setExpire(key, time);
             }
             return true;
         } catch (Exception e) {
@@ -285,8 +287,9 @@ public final class RedisUtil {
     public double hdecr(String key, String item, double by) {
         return redisTemplate.opsForHash().increment(key, item, -by);
     }
-    // ============================set=============================
 
+
+    // ============================set=============================
     /**
      * 根据key获取Set中的所有值
      * @param key 键
@@ -342,7 +345,7 @@ public final class RedisUtil {
         try {
             Long count = redisTemplate.opsForSet().add(key, values);
             if (time > 0)
-                expire(key, time);
+                this.setExpire(key, time);
             return count;
         } catch (Exception e) {
             e.printStackTrace();
@@ -379,8 +382,8 @@ public final class RedisUtil {
             return 0;
         }
     }
-    // ===============================list=================================
 
+    // ===============================list=================================
     /**
      * 获取list缓存的内容
      * @param key 键
@@ -433,7 +436,7 @@ public final class RedisUtil {
      * @param
      * @return
      */
-    public boolean lSet(String key, Object value) {
+    public boolean listSet(String key, Object value) {
         try {
             redisTemplate.opsForList().rightPush(key, value);
             return true;
@@ -454,7 +457,7 @@ public final class RedisUtil {
         try {
             redisTemplate.opsForList().rightPush(key, value);
             if (time > 0)
-                expire(key, time);
+                this.setExpire(key, time);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -479,7 +482,7 @@ public final class RedisUtil {
     }
 
     /**
-     * 将list放入缓存
+     * 将list放入缓存    1+-----1
      *
      * @param key 键
      * @param value 值
@@ -490,7 +493,7 @@ public final class RedisUtil {
         try {
             redisTemplate.opsForList().rightPushAll(key, value);
             if (time > 0)
-                expire(key, time);
+                this.setExpire(key, time);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
