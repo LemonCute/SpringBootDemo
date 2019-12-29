@@ -1,6 +1,9 @@
 package com.lcke.demo.utils.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -8,17 +11,21 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * Description:编写一个配置类，是WebMvcConfigurerAdapter类的子类，但是不能标注@EnableWebMvc注解。
  * 这样它既保留了所有的自动配置，也能使用自定义的扩展配置。 <br/>
  *
- * @author: smk<br   />
+ * @author: smk<br       />
  * @date: 2019/12/25 14:04<br/>
  * © 2019 柠檬不萌香蕉不娇. All Rights Reserved. 版权所有.
  */
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
 
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("/index");
+        logger.warn("配置主页面跳转");
+        registry.addViewController("/").setViewName("forward:/index.html");
+        registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
+        WebMvcConfigurer.super.addViewControllers(registry);
     }
 }
 ////使用WebMvcConfigurerAdapter可以来扩展SpringMVC的功能
