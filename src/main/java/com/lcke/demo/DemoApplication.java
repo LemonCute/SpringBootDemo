@@ -13,6 +13,11 @@ import java.util.Properties;
 
 /**
  * @SpringBootApplication 来标注一个主程序类，说明这是一个SpringBoot应用
+ * @SpringBootApplication 注解是一个便利的注解，它包含了以下几个注解。
+ * @Configuration 定义配置类。
+ * @EnableAutoConfiguration 开启自动配置。
+ * @EnableWebMvc 标记为 web应用程序。
+ * @ComponentScan 组件扫描。
  * <p>
  * https://docs.spring.io/spring-boot/docs/1.5.12.RELEASE/reference/htmlsingle/#boot-features-external-config
  * ##@SpringBootConfiguration
@@ -39,6 +44,7 @@ import java.util.Properties;
  * @CacheConfig：标注在类上，表示当前类使用的缓存组件中的key为该注解指定的cacheNames/value，当该注解指定了cacheNames/value之后，@Cacheable上就无需再使用cacheNames/value了；
  * @Cacheable：将方法的结果进行缓存；
  * cacheNames/value：缓存组件的名字；
+ * @ServletComponentScan 扫描Servlet,Filter,Listener 添加到容器
  */
 @SpringBootApplication
 @ServletComponentScan
@@ -68,7 +74,6 @@ public class DemoApplication {
         }
         //设置属性
         application.setDefaultProperties(properties);
-
         //启动
         application.run(args);
 

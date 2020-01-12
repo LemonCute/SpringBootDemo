@@ -2,26 +2,28 @@ package com.lcke.demo.utils.rabbitMQ;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.redis.listener.Topic;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * ClassName: asdasdas <br/>
+ * ClassName: ssadsasa <br/>
  * Description: <br/>
- * date: 2020/1/9 20:22<br/>
+ * date: 2020/1/9 20:59<br/>
  *
  * @author smk<br />
  * @since JDK 1.8
  */
 @RestController
-public class FanoutController {
+@RequestMapping("/topic")
+public class TopicController {
     @Autowired
-    @Qualifier("fanout-sender")
-    private FanoutSender sender;
+    @Qualifier("topic-sender")
+    private TopicSender sender;
 
-    @RequestMapping("/fanout")
-    public String hello(String name){
-        sender.send(name);
+    @RequestMapping("/send")
+    public String send(String routeKey){
+        sender.send(routeKey);
         return "success";
     }
 }

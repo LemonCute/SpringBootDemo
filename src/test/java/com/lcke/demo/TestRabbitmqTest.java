@@ -26,6 +26,6 @@ public class TestRabbitmqTest {
 
     @Test
     public void test(){
-        sender.send(new Date().toString());
+        sender.send();
     }
 }

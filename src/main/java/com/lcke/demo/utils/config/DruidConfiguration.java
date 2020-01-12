@@ -1,6 +1,7 @@
 package com.lcke.demo.utils.config;
 
 import com.alibaba.druid.support.http.StatViewServlet;
+import lombok.Data;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -18,7 +19,9 @@ import javax.sql.DataSource;
 
 /**
  * springboot继承druid监控
+ * @Data 是 Lombok 的注解，会为这个类所有属性添加 getting 和 setting 方法，此外还提供了equals、canEqual、hashCode、toString 方法。
  */
+@Data
 @Component
 @Configuration
 @ConfigurationProperties(prefix = "spring.datasource.druid")

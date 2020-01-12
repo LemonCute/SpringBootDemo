@@ -3,7 +3,7 @@
 <mapper namespace="com.lcke.demo.dao.UserDao">
 
     <resultMap id="calculate" type="java.util.Map">
-
+        <result column="id" property="id" javaType="java.lang.Integer" />
     </resultMap>
 
     <select id="getUser" resultType="com.lcke.demo.pojo.UserEntity">

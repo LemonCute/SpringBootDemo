@@ -15,14 +15,14 @@ import java.time.format.DateTimeFormatter;
  * @author smk<br />
  * @since JDK 1.8
  */
-@Component(value = "fanout-sender")
+@Component(value = "sender")
 public class Sender {
     @Autowired
     private AmqpTemplate amqpTemplate;
 
-    public void send(String name){
-        String content = "hello : " + name + "，当前时间：" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+    public void send(){
+        String content = "hello : " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
-        amqpTemplate.convertAndSend(FanoutConfig.FANOUT_EXCHANGE_NAME, "", content);
+        amqpTemplate.convertAndSend("hello", content);
     }
 }

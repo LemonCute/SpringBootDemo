@@ -18,6 +18,7 @@ import java.util.List;
  *
  * @author smk<br />
  * @since JDK 1.8
+ * @RestController 是 @RestController 与 @ResponseBody 的结合体。
  */
 @RestController
 @RequestMapping("/person")

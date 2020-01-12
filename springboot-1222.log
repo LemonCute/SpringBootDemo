@@ -1,0 +1,636 @@
+2020-01-12 11:28:48.960  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:28:48.978  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:28:49.140  INFO 15952 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\mydev\ssmJar\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/mydev/ssmJar/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/mydev/ssmJar/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/mydev/ssmJar/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/mydev/ssmJar/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/mydev/ssmJar/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/mydev/ssmJar/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-12 11:28:49.141  INFO 15952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-12 11:28:49.141  INFO 15952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-12 11:28:52.699  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:28:52.882  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:28:52.884  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:28:53.116  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 207ms. Found 1 JPA repository interfaces.
+2020-01-12 11:28:53.149  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:28:53.151  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:28:53.181  INFO 15952 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lcke.demo.dao.IPersonRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-12 11:28:53.182  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-01-12 11:28:53.499  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'IPersonRepository' and 'com.lcke.demo.dao.IPersonRepository' mapperInterface. Bean already defined with the same name!
+2020-01-12 11:28:54.029  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfiguration' of type [com.lcke.demo.utils.config.DruidConfiguration$$EnhancerBySpringCGLIB$$8514f7ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:28:54.411  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:28:55.547  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:28:55.563  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:28:55.564  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:28:55.846  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:28:55.848  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6706 ms
+2020-01-12 11:28:56.210  INFO 15952 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-01-12 11:28:56.270  INFO 15952 --- [restartedMain] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始初始化
+2020-01-12 11:28:58.051  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-01-12 11:28:59.101  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:28:59.230  INFO 15952 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-12 11:28:59.490  INFO 15952 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-12 11:28:59.738  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:29:00.948  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:29:00.967  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:29:03.630  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:29:04.739  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:29:04.843  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:29:05.046  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:29:05.069  WARN 15952 --- [restartedMain] cConfig$$EnhancerBySpringCGLIB$$f58e1961 : 配置主页面跳转
+2020-01-12 11:29:06.320  INFO 15952 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-12 11:29:06.555  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-12 11:29:06.601  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-12 11:29:06.642  INFO 15952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-12 11:29:06.674  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-01-12 11:29:06.806  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4b597a6b:0/SimpleConnection@755cab61 [delegate=amqp://test@127.0.0.1:5672/, localPort= 61190]
+2020-01-12 11:29:07.205  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:29:07.210  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 19.501 seconds (JVM running for 30.804)
+2020-01-12 11:31:01.489  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:31:02.200  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:31:02.226  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:31:03.210  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:31:03.223  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:31:04.209  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:31:04.211  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:31:05.217  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:31:05.224  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:31:06.228  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:31:06.234  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:31:06.258  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:31:06.276  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:31:07.276  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:31:07.282  INFO 15952 --- [Thread-39] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-01-12 11:31:07.283  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:31:07.284  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:31:07.284  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:31:07.284  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:31:07.284  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:31:07.284  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:31:07.285  INFO 15952 --- [Thread-39] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:31:07.285  INFO 15952 --- [Thread-39] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:31:07.572  INFO 15952 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:31:07.704  INFO 15952 --- [Thread-39] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-01-12 11:31:12.681  INFO 15952 --- [Thread-39] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始销毁
+2020-01-12 11:31:13.421  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:31:13.423  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:31:15.347  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:31:15.475  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:31:15.475  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:31:15.521  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+2020-01-12 11:31:15.538  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:31:15.538  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:31:15.587  INFO 15952 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lcke.demo.dao.IPersonRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-12 11:31:15.587  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+2020-01-12 11:31:15.847  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'IPersonRepository' and 'com.lcke.demo.dao.IPersonRepository' mapperInterface. Bean already defined with the same name!
+2020-01-12 11:31:16.202  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfiguration' of type [com.lcke.demo.utils.config.DruidConfiguration$$EnhancerBySpringCGLIB$$8514f7ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:31:16.300  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:31:16.773  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:31:17.115  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:31:17.119  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:31:17.121  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:31:17.242  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:31:17.243  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3794 ms
+2020-01-12 11:31:17.452  INFO 15952 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-01-12 11:31:17.454  INFO 15952 --- [restartedMain] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始初始化
+2020-01-12 11:31:18.129  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2020-01-12 11:31:19.301  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:31:19.313  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:31:19.401  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:31:19.402  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:31:22.864  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:31:24.368  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:31:24.452  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:31:24.524  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:31:24.580  INFO 15952 --- [restartedMain] cConfig$$EnhancerBySpringCGLIB$$f58e1961 : 配置主页面跳转
+2020-01-12 11:31:26.397  INFO 15952 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-12 11:31:26.771  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-12 11:31:26.773  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-12 11:31:26.797  INFO 15952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-12 11:31:26.799  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-01-12 11:31:26.828  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#65a201fa:0/SimpleConnection@55c4b4f [delegate=amqp://test@127.0.0.1:5672/, localPort= 53851]
+2020-01-12 11:31:27.121  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:31:27.128  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 13.863 seconds (JVM running for 170.722)
+2020-01-12 11:31:27.203  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:31:45.363  INFO 15952 --- [http-nio-8082-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-12 11:31:45.365  INFO 15952 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-12 11:31:45.393  INFO 15952 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-01-12 11:31:45.415  INFO 15952 --- [http-nio-8082-exec-9] com.lcke.demo.utils.MVC3Com.MyFilter     : 拦截器开始拦截
+2020-01-12 11:31:45.429  INFO 15952 --- [http-nio-8082-exec-9] c.l.d.u.config.LogHandlerInterceptor     : preHandle请求URL：http://localhost:8082/boot/
+2020-01-12 11:31:45.438  INFO 15952 --- [http-nio-8082-exec-9] c.l.d.u.config.LogHandlerInterceptor     : postHandle返回modelAndView之前
+2020-01-12 11:31:45.467  INFO 15952 --- [http-nio-8082-exec-9] c.l.d.u.config.LogHandlerInterceptor     : preHandle请求URL：http://localhost:8082/boot/index.html
+2020-01-12 11:31:45.498  INFO 15952 --- [http-nio-8082-exec-9] c.l.d.u.config.LogHandlerInterceptor     : postHandle返回modelAndView之前
+2020-01-12 11:31:45.498  INFO 15952 --- [http-nio-8082-exec-9] c.l.d.u.config.LogHandlerInterceptor     : afterCompletion执行完请求方法完全返回之后
+2020-01-12 11:31:45.503  INFO 15952 --- [http-nio-8082-exec-9] c.l.d.u.config.LogHandlerInterceptor     : afterCompletion执行完请求方法完全返回之后
+2020-01-12 11:31:51.597  INFO 15952 --- [http-nio-8082-exec-5] com.lcke.demo.utils.MVC3Com.MyFilter     : 拦截器开始拦截
+2020-01-12 11:31:51.615  INFO 15952 --- [http-nio-8082-exec-5] c.l.d.u.config.LogHandlerInterceptor     : preHandle请求URL：http://localhost:8082/boot/error
+2020-01-12 11:31:51.671  INFO 15952 --- [http-nio-8082-exec-5] c.l.d.u.config.LogHandlerInterceptor     : postHandle返回modelAndView之前
+2020-01-12 11:31:51.675  INFO 15952 --- [http-nio-8082-exec-5] c.l.d.u.config.LogHandlerInterceptor     : afterCompletion执行完请求方法完全返回之后
+2020-01-12 11:35:35.758  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:35:36.031  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:35:36.038  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:35:37.154  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:35:37.156  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:35:38.155  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:35:38.157  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:35:39.152  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:35:39.155  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:35:40.148  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:35:40.150  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:35:40.156  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:35:40.158  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:35:41.156  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:35:41.159  INFO 15952 --- [Thread-52] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-01-12 11:35:41.160  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:35:41.160  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:35:41.160  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:35:41.161  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:35:41.161  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:35:41.161  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:35:41.161  INFO 15952 --- [Thread-52] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:35:41.162  INFO 15952 --- [Thread-52] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:35:41.167  INFO 15952 --- [Thread-52] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:35:41.175  INFO 15952 --- [Thread-52] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2020-01-12 11:35:44.658  INFO 15952 --- [Thread-52] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始销毁
+2020-01-12 11:35:45.949  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:35:45.950  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:35:49.145  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:35:49.804  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:35:49.805  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:35:49.924  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 1 JPA repository interfaces.
+2020-01-12 11:35:49.942  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:35:49.942  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:35:49.957  INFO 15952 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lcke.demo.dao.IPersonRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-12 11:35:49.957  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-01-12 11:35:50.207  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'IPersonRepository' and 'com.lcke.demo.dao.IPersonRepository' mapperInterface. Bean already defined with the same name!
+2020-01-12 11:35:50.804  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfiguration' of type [com.lcke.demo.utils.config.DruidConfiguration$$EnhancerBySpringCGLIB$$8514f7ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:35:50.843  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:35:51.246  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:35:51.755  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:35:51.757  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:35:51.758  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:35:51.849  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:35:51.849  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5889 ms
+2020-01-12 11:35:52.073  INFO 15952 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-01-12 11:35:52.074  INFO 15952 --- [restartedMain] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始初始化
+2020-01-12 11:35:52.684  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2020-01-12 11:35:53.983  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:35:53.992  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:35:54.099  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:35:54.099  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:35:56.672  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:35:58.331  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:35:58.508  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:35:58.654  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:35:58.756  INFO 15952 --- [restartedMain] cConfig$$EnhancerBySpringCGLIB$$f58e1961 : 配置主页面跳转
+2020-01-12 11:36:01.520  INFO 15952 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-12 11:36:01.824  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-12 11:36:01.826  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-12 11:36:01.837  INFO 15952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-12 11:36:01.840  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-01-12 11:36:01.854  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7e255098:0/SimpleConnection@79885216 [delegate=amqp://test@127.0.0.1:5672/, localPort= 53977]
+2020-01-12 11:36:02.133  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:36:02.135  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 16.365 seconds (JVM running for 445.729)
+2020-01-12 11:36:02.139  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:36:35.880  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:36:36.011  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:36:36.025  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:36:36.062  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:36:36.069  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:36:36.141  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:36:36.144  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:36:36.179  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:36:36.231  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:36:36.241  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:36:36.244  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:36:37.193  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:36:37.196  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:36:37.662  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:36:37.665  INFO 15952 --- [Thread-57] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-01-12 11:36:37.666  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:36:37.666  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:36:37.667  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:36:37.667  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:36:37.667  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:36:37.667  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:36:37.668  INFO 15952 --- [Thread-57] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:36:37.669  INFO 15952 --- [Thread-57] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:36:37.678  INFO 15952 --- [Thread-57] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:36:37.683  INFO 15952 --- [Thread-57] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2020-01-12 11:36:42.161  INFO 15952 --- [Thread-57] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始销毁
+2020-01-12 11:36:43.061  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:36:43.063  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:36:44.275  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:36:44.394  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:36:44.395  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:36:44.431  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 1 JPA repository interfaces.
+2020-01-12 11:36:44.446  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:36:44.446  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:36:44.463  INFO 15952 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lcke.demo.dao.IPersonRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-12 11:36:44.463  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-01-12 11:36:44.621  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'IPersonRepository' and 'com.lcke.demo.dao.IPersonRepository' mapperInterface. Bean already defined with the same name!
+2020-01-12 11:36:44.763  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfiguration' of type [com.lcke.demo.utils.config.DruidConfiguration$$EnhancerBySpringCGLIB$$8514f7ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:36:44.815  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:36:45.257  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:36:45.585  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:36:45.586  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:36:45.587  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:36:45.706  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:36:45.706  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2631 ms
+2020-01-12 11:36:45.840  INFO 15952 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2020-01-12 11:36:45.842  INFO 15952 --- [restartedMain] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始初始化
+2020-01-12 11:36:46.388  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2020-01-12 11:36:47.598  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:36:47.607  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:36:47.664  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:36:47.664  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:36:49.755  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:36:51.652  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:36:51.692  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:36:51.729  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:36:51.766  INFO 15952 --- [restartedMain] cConfig$$EnhancerBySpringCGLIB$$f58e1961 : 配置主页面跳转
+2020-01-12 11:36:53.648  INFO 15952 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-12 11:36:53.912  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-12 11:36:53.914  INFO 15952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-12 11:36:53.926  INFO 15952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-12 11:36:53.929  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2020-01-12 11:36:53.990  INFO 15952 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7b7d8cc3:0/SimpleConnection@6e087cfc [delegate=amqp://test@127.0.0.1:5672/, localPort= 54001]
+2020-01-12 11:36:54.228  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:36:54.230  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 11.261 seconds (JVM running for 497.824)
+2020-01-12 11:36:54.234  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:40:45.809  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:40:46.407  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:40:46.410  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:40:47.415  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:40:47.428  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:40:48.416  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:40:48.419  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:40:49.424  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:40:49.427  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:40:50.425  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:40:50.428  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:40:51.430  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:40:51.441  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-01-12 11:40:52.459  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-01-12 11:40:52.462  INFO 15952 --- [Thread-62] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-01-12 11:40:52.463  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:40:52.463  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:40:52.463  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:40:52.465  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:40:52.465  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:40:52.465  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:40:52.466  INFO 15952 --- [Thread-62] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-01-12 11:40:52.467  INFO 15952 --- [Thread-62] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:40:52.651  INFO 15952 --- [Thread-62] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:40:52.683  INFO 15952 --- [Thread-62] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2020-01-12 11:41:00.442  INFO 15952 --- [Thread-62] com.lcke.demo.utils.MVC3Com.MyListener   : 监听器开始销毁
+2020-01-12 11:41:01.224  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:41:01.225  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:41:02.706  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:41:02.879  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:41:02.879  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:41:02.880  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 JPA repository interfaces.
+2020-01-12 11:41:02.926  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:41:02.927  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:41:02.928  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Redis repository interfaces.
+2020-01-12 11:41:03.194  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:41:03.311  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:41:03.466  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:41:03.784  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:41:03.786  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:41:03.791  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:41:03.973  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:41:03.974  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2738 ms
+2020-01-12 11:41:04.155  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:41:04.524  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2020-01-12 11:41:08.220  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:41:08.239  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:41:08.277  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:41:08.277  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:41:08.405  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:41:08.630  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:41:08.755  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:41:09.431  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:41:09.489  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:41:09.490  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 8.474 seconds (JVM running for 753.084)
+2020-01-12 11:41:09.501  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   DruidDataSourceAutoConfigure#dataSource matched:
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnBean (types: org.springframework.boot.web.servlet.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisPlusAutoConfiguration#sqlSessionFactory matched:
+      - @ConditionalOnBean (types: org.apache.ibatis.session.SqlSessionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a primary bean from beans 'jdbcTemplate'; @ConditionalOnBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisAutoConfiguration#redisTemplate matched:
+      - @ConditionalOnBean (names: redisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   TaskSchedulingAutoConfiguration#taskScheduler:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-01-12 11:42:09.626  INFO 15952 --- [Thread-67] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:42:09.628  INFO 15952 --- [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:42:09.631  INFO 15952 --- [Thread-67] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2020-01-12 11:42:15.457  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:42:15.458  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:42:16.331  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:42:16.408  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:42:16.408  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:42:16.409  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 JPA repository interfaces.
+2020-01-12 11:42:16.423  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:42:16.424  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:42:16.425  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Redis repository interfaces.
+2020-01-12 11:42:16.535  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:42:16.581  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:42:16.662  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:42:16.979  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:42:16.983  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:42:16.983  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:42:17.098  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:42:17.098  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1624 ms
+2020-01-12 11:42:17.159  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:42:17.329  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2020-01-12 11:42:49.419 ERROR 15952 --- [Druid-ConnectionPool-Create-2021080182] com.alibaba.druid.pool.DruidDataSource   : create connection holder error
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,007 milliseconds ago. The last packet sent successfully to the server was 3,759 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getTransactionIsolation(ConnectionImpl.java:1227) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_getTransactionIsolation(FilterChainImpl.java:419) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterAdapter.connection_getTransactionIsolation(FilterAdapter.java:872) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_getTransactionIsolation(FilterChainImpl.java:415) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.getTransactionIsolation(ConnectionProxyImpl.java:260) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidConnectionHolder.<init>(DruidConnectionHolder.java:137) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidConnectionHolder.<init>(DruidConnectionHolder.java:75) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.put(DruidDataSource.java:2191) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2511) [druid-1.1.10.jar:1.1.10]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,007 milliseconds ago. The last packet sent successfully to the server was 3,759 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_131]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeProtocol.clearInputStream(NativeProtocol.java:808) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:623) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:128) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.sendCommand(NativeSession.java:311) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.queryServerVariable(NativeSession.java:1008) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getTransactionIsolation(ConnectionImpl.java:1210) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 8 common frames omitted
+Caused by: java.io.IOException: Socket is closed
+	at com.mysql.cj.protocol.AbstractSocketConnection.getMysqlInput(AbstractSocketConnection.java:72) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeProtocol.clearInputStream(NativeProtocol.java:804) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 13 common frames omitted
+
+2020-01-12 11:42:49.422  INFO 15952 --- [Druid-ConnectionPool-Create-2021080182] com.alibaba.druid.pool.DruidDataSource   : put physical connection to pool failed.
+2020-01-12 11:43:01.212  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:43:01.234  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:43:01.362  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:43:01.364  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:43:01.580  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:43:01.923  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:43:02.082  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:43:03.205  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:43:03.513  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:43:03.516  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 48.271 seconds (JVM running for 867.11)
+2020-01-12 11:43:03.530  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:43:29.776  INFO 15952 --- [Thread-72] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:43:29.778  INFO 15952 --- [Thread-72] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:43:29.781  INFO 15952 --- [Thread-72] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2020-01-12 11:43:34.456  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:43:34.457  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:43:35.312  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:43:35.416  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:43:35.417  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:43:35.419  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-01-12 11:43:35.440  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:43:35.441  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:43:35.443  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-01-12 11:43:35.577  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:43:35.629  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:43:35.748  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:43:36.141  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:43:36.155  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:43:36.156  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:43:36.240  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:43:36.241  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1776 ms
+2020-01-12 11:43:36.308  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:43:36.497  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2020-01-12 11:43:39.748  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:43:39.757  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:43:39.778  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:43:39.779  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:43:39.868  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:43:40.031  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:43:40.078  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:43:40.632  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:43:40.697  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:43:40.700  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 6.334 seconds (JVM running for 904.294)
+2020-01-12 11:43:40.702  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:43:49.198  INFO 15952 --- [Thread-77] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:43:49.201  INFO 15952 --- [Thread-77] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:43:49.204  INFO 15952 --- [Thread-77] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2020-01-12 11:43:53.621  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:43:53.623  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:43:54.321  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:43:54.441  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:43:54.442  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:43:54.443  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-01-12 11:43:54.467  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:43:54.468  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:43:54.473  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-01-12 11:43:54.749  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:43:54.856  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:43:54.992  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:43:55.630  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:43:55.636  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:43:55.636  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:43:55.713  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:43:55.713  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2076 ms
+2020-01-12 11:43:55.799  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:43:55.965  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2020-01-12 11:43:58.470  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:43:58.475  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:43:58.491  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:43:58.491  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:43:58.526  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:43:58.590  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:43:58.611  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:43:58.798  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:43:58.830  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:43:58.831  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 5.334 seconds (JVM running for 922.425)
+2020-01-12 11:43:58.833  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:44:41.120  INFO 15952 --- [Thread-82] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:44:41.122  INFO 15952 --- [Thread-82] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:44:41.127  INFO 15952 --- [Thread-82] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+2020-01-12 11:44:45.009  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:44:45.011  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:44:45.564  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:44:45.633  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:44:45.633  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:44:45.634  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 JPA repository interfaces.
+2020-01-12 11:44:45.643  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:44:45.643  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:44:45.644  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Redis repository interfaces.
+2020-01-12 11:44:45.741  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:44:45.785  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:44:45.893  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:44:46.838  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:44:46.839  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:44:46.840  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:44:46.925  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:44:46.925  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1909 ms
+2020-01-12 11:44:47.069  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:44:47.370  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+2020-01-12 11:44:55.797  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:44:55.802  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:44:55.814  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:44:55.815  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:44:55.853  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:44:55.919  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:44:55.943  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:44:56.155  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:44:56.205  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:44:56.206  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 11.266 seconds (JVM running for 979.799)
+2020-01-12 11:44:56.207  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:49:28.674  INFO 15952 --- [Thread-87] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:49:28.676  INFO 15952 --- [Thread-87] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:49:28.714  INFO 15952 --- [Thread-87] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+2020-01-12 11:49:38.338  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:49:38.339  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:49:39.275  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:49:39.440  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:49:39.441  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:49:39.442  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-01-12 11:49:39.455  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:49:39.455  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:49:39.459  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2020-01-12 11:49:39.594  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:49:39.664  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:49:39.802  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:49:40.564  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:49:40.567  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:49:40.567  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:49:40.759  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:49:40.759  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2401 ms
+2020-01-12 11:49:40.919  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:49:41.707  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+2020-01-12 11:49:42.628  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:49:42.642  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:49:42.671  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:49:42.672  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:49:42.802  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:49:43.102  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:49:43.207  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:49:43.898  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:49:43.972  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:49:43.973  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 5.743 seconds (JVM running for 1267.567)
+2020-01-12 11:49:43.976  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:50:01.474  INFO 15952 --- [Thread-92] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:50:01.477  INFO 15952 --- [Thread-92] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:50:01.485  INFO 15952 --- [Thread-92] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+2020-01-12 11:50:05.988  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:50:05.988  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:50:06.770  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:50:06.862  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:50:06.862  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:50:06.864  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-01-12 11:50:06.877  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:50:06.878  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:50:06.879  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-01-12 11:50:07.014  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:50:07.074  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:50:07.170  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:50:07.530  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:50:07.531  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:50:07.531  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:50:07.720  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:50:07.720  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1719 ms
+2020-01-12 11:50:07.944  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:50:09.041  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} inited
+2020-01-12 11:50:10.278  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:50:10.292  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:50:10.320  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:50:10.321  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:50:10.412  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:50:10.580  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:50:10.625  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:50:11.278  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:50:11.469  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:50:11.470  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 5.568 seconds (JVM running for 1295.064)
+2020-01-12 11:50:11.476  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-01-12 11:50:23.639  INFO 15952 --- [Thread-97] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:50:23.642  INFO 15952 --- [Thread-97] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:50:23.646  INFO 15952 --- [Thread-97] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
+2020-01-12 11:50:27.943  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Starting DemoApplication on shenmingkai with PID 15952 (S:\AItest\ssmorign\demo\target\classes started by smk in S:\AItest\ssmorign\demo)
+2020-01-12 11:50:27.944  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : No active profile set, falling back to default profiles: default
+2020-01-12 11:50:28.638  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo]' package. Please check your configuration.
+2020-01-12 11:50:28.777  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:50:28.777  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-12 11:50:28.779  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
+2020-01-12 11:50:28.790  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-12 11:50:28.790  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-12 11:50:28.791  INFO 15952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Redis repository interfaces.
+2020-01-12 11:50:28.903  WARN 15952 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lcke.demo.dao]' package. Please check your configuration.
+2020-01-12 11:50:28.963  INFO 15952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-12 11:50:29.085  WARN 15952 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-01-12 11:50:29.412  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-01-12 11:50:29.414  INFO 15952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-12 11:50:29.415  INFO 15952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-12 11:50:29.502  INFO 15952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-01-12 11:50:29.502  INFO 15952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1545 ms
+2020-01-12 11:50:29.611  INFO 15952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-01-12 11:50:29.785  INFO 15952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} inited
+2020-01-12 11:50:30.661  INFO 15952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-12 11:50:30.685  INFO 15952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-12 11:50:30.721  INFO 15952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-12 11:50:30.721  INFO 15952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-12 11:50:30.796  WARN 15952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-12 11:50:31.557  INFO 15952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-12 11:50:31.811  INFO 15952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-12 11:50:32.398  INFO 15952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-12 11:50:32.476  INFO 15952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/boot'
+2020-01-12 11:50:32.477  INFO 15952 --- [restartedMain] com.lcke.demo.DemoApplication            : Started DemoApplication in 4.612 seconds (JVM running for 1316.071)
+2020-01-12 11:50:32.480  INFO 15952 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

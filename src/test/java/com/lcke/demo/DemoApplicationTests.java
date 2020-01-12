@@ -10,25 +10,49 @@ package com.lcke.demo;
  */
 
 
+import org.aspectj.lang.annotation.Before;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@SpringBootTest
+import java.net.URL;
+
+
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class DemoApplicationTests {
     //日志记录器
     Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
+    @Autowired
+    private TestRestTemplate template;
+
+    @LocalServerPort
+    private int port;
+
+    private URL base;
     @Test
     void contextLoads1() {
     }
-
+    @Before("")
+    public void setup() throws Exception {
+        this.base = new URL("http://localhost:" + port + "/");
+    }
+    @Test
+    public void getHello() throws Exception {
+        ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
+        assert (response.getBody().equals("Greetings from Spring Boot!"));
+    }
     @Test
     public void contextLoads() {
         //日志的级别：
