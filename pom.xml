@@ -187,13 +187,13 @@
             <artifactId>commons-net</artifactId>
             <version>3.6</version>
         </dependency>
-
-        <!--jpa,只有persom使用，mybits更方便-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>2.2.2.RELEASE</version>
-        </dependency>
+        <!--不再使用jpa-->
+        <!--&lt;!&ndash;jpa,只有persom使用，mybits更方便&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+            <!--<version>2.2.2.RELEASE</version>-->
+        <!--</dependency>-->
         <!--RabbitMQ-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

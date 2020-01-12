@@ -1,0 +1,107 @@
+package com.lcke.demo.utils.defaultConfig;
+
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.ResourceLoaderAware;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.io.support.ResourcePatternResolver;
+import org.springframework.core.io.support.ResourcePatternUtils;
+import org.springframework.stereotype.Component;
+
+import java.beans.beancontext.BeanContextSupport;
+import java.util.List;
+
+@Component
+@ConfigurationProperties(prefix = "spring.resources", ignoreUnknownFields = true)
+public class ResourceProperties implements ResourceLoaderAware, InitializingBean {
+    //可以设置和静态资源有关的参数，缓存时间等。。。
+    private static final String[] SERVLET_RESOURCE_LOCATIONS = { "/" };
+
+    private static final String[] CLASSPATH_RESOURCE_LOCATIONS = {
+            "classpath:/META-INF/resources/", "classpath:/resources/",
+            "classpath:/static/", "classpath:/public/" };
+
+    //错误处理
+    private static String[]  RESOURCE_LOCATIONS=null;
+    private BeanContextSupport resourceLoader;
+
+    //staticLocations即为上面连个变量的合集
+    private String[] staticLocations = RESOURCE_LOCATIONS;
+
+    static {
+        RESOURCE_LOCATIONS = new String[CLASSPATH_RESOURCE_LOCATIONS.length
+                + SERVLET_RESOURCE_LOCATIONS.length];
+        System.arraycopy(SERVLET_RESOURCE_LOCATIONS, 0, RESOURCE_LOCATIONS, 0,
+                SERVLET_RESOURCE_LOCATIONS.length);
+        System.arraycopy(CLASSPATH_RESOURCE_LOCATIONS, 0, RESOURCE_LOCATIONS,
+                SERVLET_RESOURCE_LOCATIONS.length, CLASSPATH_RESOURCE_LOCATIONS.length);
+    }
+
+
+    /**
+     * Invoked by the containing {@code BeanFactory} after it has set all bean properties
+     * and satisfied {@link }, {@code ApplicationContextAware} etc.
+     * <p>This method allows the bean instance to perform validation of its overall
+     * configuration and final initialization when all bean properties have been set.
+     *
+     * @throws Exception in the event of misconfiguration (such as failure to set an
+     *                   essential property) or if initialization fails for any other reason
+     */
+    @Override
+    public void afterPropertiesSet() throws Exception {
+
+    }
+
+    /**
+     * Set the ResourceLoader that this object runs in.
+     * <p>This might be a ResourcePatternResolver, which can be checked
+     * through {@code instanceof ResourcePatternResolver}. See also the
+     * {@code ResourcePatternUtils.getResourcePatternResolver} method.
+     * <p>Invoked after population of normal bean properties but before an init callback
+     * like InitializingBean's {@code afterPropertiesSet} or a custom init-method.
+     * Invoked before ApplicationContextAware's {@code setApplicationContext}.
+     *
+     * @param resourceLoader the ResourceLoader object to be used by this object
+     * @see ResourcePatternResolver
+     * @see ResourcePatternUtils#getResourcePatternResolver
+     */
+    @Override
+    public void setResourceLoader(ResourceLoader resourceLoader) {
+
+    }
+
+    public Resource getWelcomePage() {
+        for (String location : getStaticWelcomePageLocations()) {
+            Resource resource = null;//this.resourceLoader.getResource(location);
+            try {
+                if (resource.exists()) {
+                    resource.getURL();
+                    return resource;
+                }
+            }
+            catch (Exception ex) {
+                // Ignore
+            }
+        }
+        return null;
+    }
+
+    //获取所有静态资源文件夹下的欢迎页index.html
+    private String[] getStaticWelcomePageLocations() {
+        String[] result = new String[this.staticLocations.length];
+        for (int i = 0; i < result.length; i++) {
+            String location = this.staticLocations[i];
+            if (!location.endsWith("/")) {
+                location = location + "/";
+            }
+            result[i] = location + "index.html";
+        }
+        return result;
+    }
+
+    //错误处理
+    public List<Resource> getFaviconLocations() {
+        return null;
+    }
+}
