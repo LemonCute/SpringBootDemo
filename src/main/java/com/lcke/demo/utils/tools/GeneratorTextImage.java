@@ -24,10 +24,6 @@ import javax.imageio.ImageIO;
  * 3.获取图片像素点亮度
  * 4.匹配字符
  * 5.输出图案
- *
- * @author  niujinpeng
- * @website www.codingme.net
- * @date 2019-02-25 23:03:01
  */
 public class GeneratorTextImage {
     private static final char[] PIXEL = {'@', '#', '8', '&', 'o', ':', '*', '.', ' '};

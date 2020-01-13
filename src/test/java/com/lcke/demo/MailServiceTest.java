@@ -75,4 +75,15 @@ public class MailServiceTest {
 //        helper.addInline(imgId, resource);
 //        mailSender.send(mimeMessage);// 发送邮件
     }
+
+
+    @Test
+    public void sendTemplateMailTest() throws MessagingException {
+        String to = "hostnow@lcke.xyz";
+        String subject = "Springboot 发送 模版邮件";
+        Map<String, Object> paramMap = new HashMap();
+        paramMap.put("username", "Darcy");
+        mailService.sendTemplateMail(to, subject, paramMap, "RegisterSuccess");
+    }
+
 }

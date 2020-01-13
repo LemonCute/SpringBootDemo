@@ -5,5 +5,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--xml方式注册 bean-->
-    <!--<bean id="helloService" class="com.lcke.demo.SpringBootConfig"></bean>-->
+    <!--<bean id="helloService" class="com.lcke.demo.utils.testMethod.SpringBootConfig"></bean>-->
 </beans>

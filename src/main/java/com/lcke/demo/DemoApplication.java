@@ -46,10 +46,11 @@ import java.util.Properties;
  * cacheNames/value：缓存组件的名字；
  * @ServletComponentScan 扫描Servlet,Filter,Listener 添加到容器
  */
+//@EnableAdminServer
 @SpringBootApplication
 @ServletComponentScan
 @EnableCaching
-//必须加这个，不加报错，如果不加，也可以在每个mapper上添加@Mapper注释
+//Dao层必须加这个，不加报错，如果不加，也可以在每个mapper上添加@Mapper注释
 @MapperScan({"com.lcke.demo.dao"})
 public class DemoApplication {
     //Spring应用启动

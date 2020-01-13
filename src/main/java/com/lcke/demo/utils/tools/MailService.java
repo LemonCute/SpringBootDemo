@@ -17,6 +17,8 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
@@ -133,4 +135,28 @@ public class MailService {
         mailSender.send(mimeMessage);
         log.info("【图片邮件】成功发送！to={}", to);
     }
+
+
+    @Autowired
+    private TemplateEngine templateEngine;
+
+    /**
+     * 发送模版邮件
+     *
+     * @param to
+     * @param subject
+     * @param paramMap
+     * @param template
+     * @throws MessagingException
+     */
+    public void sendTemplateMail(String to, String subject, Map<String, Object> paramMap, String template)
+            throws MessagingException {
+        Context context = new Context();
+        // 设置变量的值
+        context.setVariables(paramMap);
+        String emailContent = templateEngine.process(template, context);
+        sendHtmlMail(to, subject, emailContent);
+        log.info("【模版邮件】成功发送！paramsMap={}，template={}", paramMap, template);
+    }
+
 }

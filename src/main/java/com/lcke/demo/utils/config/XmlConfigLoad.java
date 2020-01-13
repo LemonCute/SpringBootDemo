@@ -20,7 +20,7 @@ public class XmlConfigLoad {
 
     /**
      *  @Bean 和  applicationContext.config
-     *  <bean id="helloService" class="com.lcke.demo.SpringBootConfig"></bean>
+     *  <bean id="helloService" class="com.lcke.demo.utils.testMethod.SpringBootConfig"></bean>
      *  注解 应用法相同
      */
     @Bean

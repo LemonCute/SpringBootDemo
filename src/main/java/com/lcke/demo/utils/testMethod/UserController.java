@@ -1,4 +1,4 @@
-package com.lcke.demo.utils;
+package com.lcke.demo.utils.testMethod;
 
 import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;

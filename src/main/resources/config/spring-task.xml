@@ -10,7 +10,7 @@
 
     <!-- 配置调度 需要在类名前添加 @Service -->
     <task:scheduled-tasks>
-        <task:scheduled ref="mytaskScheduler" method="print" cron="0/5 * * * * ?"/>
+        <task:scheduled ref="mytaskScheduler" method="print" cron="0/30 0/3 * * * ?"/>
     </task:scheduled-tasks>
 
 

@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
  */
 @Component
 public class OtherScheduler{
-    @Scheduled(cron="0/10 * * * * ?")
+    @Scheduled(cron="0/40 0/5 * * * ?")
     public void show(){
         System.out.println("OtherScheduler：" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss:SSS")));
     }
