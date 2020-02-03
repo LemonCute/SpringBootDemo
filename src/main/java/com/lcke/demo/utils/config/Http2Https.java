@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Configuration;
  * @Author niujinpeng
  * @Date 2019/4/21 17:47
  */
-@Configuration
+//@Configuration
 public class Http2Https {
 
     @Value("${server.port}")
@@ -33,7 +33,7 @@ public class Http2Https {
     @Value("${server.http-port}")
     private int httpPort;
 
-    @Bean
+//    @Bean
     public TomcatServletWebServerFactory servletContainerFactory() {
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
             @Override
